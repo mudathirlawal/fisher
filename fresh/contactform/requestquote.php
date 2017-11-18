@@ -10,7 +10,7 @@ require_once('../vendor/autoload.php');
 $mail = new \PHPMailer\PHPMailer\PHPMailer();
 
 // Email information
-$contact_email_to = "surajudeen.akande@andela.com";
+$contact_email_to = "";
 $email = $_POST['email'];
 $name = $_POST['name'];
 $message = $_POST['message'];
@@ -20,8 +20,8 @@ $mail->isSMTP();                                 // Set mailer to use SMTP
 //  $mail->SMTPDebug = 2;
 $mail->Host = 'smtp.gmail.com';      // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                          // Enable SMTP authentication
-$mail->Username = 'sirolad@gmail.com';  // SMTP username
-$mail->Password = 'Sirolad01$';                // SMTP password
+$mail->Username = '';  // SMTP username
+$mail->Password = '';                // SMTP password
 $mail->SMTPSecure = 'ssl';                       // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                               // TCP port to connect to
 
